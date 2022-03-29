@@ -18,6 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/multiplicacion', 'App\Http\Controllers\MultiplicacionController@index');//Mostrar todos los registros
-Route::post('/multiplicacion', 'App\Http\Controllers\MultiplicacionController@store');
-Route::delete('/multiplicacion', 'App\Http\Controllers\MultiplicacionController@destroy');
+Route::get('/multiplicacion/list', 'App\Http\Controllers\MultiplicacionController@index');//Mostrar todos los registros
+Route::post('/multiplicacion/save', 'App\Http\Controllers\MultiplicacionController@store');
+Route::delete('/multiplicacion/delete', 'App\Http\Controllers\MultiplicacionController@destroy');
