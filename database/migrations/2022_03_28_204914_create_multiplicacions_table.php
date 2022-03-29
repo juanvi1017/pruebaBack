@@ -15,7 +15,7 @@ class CreateMultiplicacionsTable extends Migration
     {
         Schema::create('multiplicacions', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('resultado');
+            $table->string('resultado', 300);
             $table->integer('estado')->default(1);
             $table->timestamps();
         });
